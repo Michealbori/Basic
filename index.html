@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Modern Responsive Navbar</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <!-- Logo -->
     <div class="logo">
-      <a href="/">MyLogo</a>
+      <a href="#home">MyLogo</a>
     </div>
 
     <!-- Desktop Menu -->
     <ul class="nav-links desktop-menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="#home">WELCOME</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
 
     <!-- Buttons (Sign Up & Login) -->
@@ -36,29 +48,18 @@
 
     <!-- Mobile Menu -->
     <ul class="nav-links mobile-menu" id="mobile-menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li>
+      <li><a href="#home">WELCOME</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="mobile-buttons">
         <button class="btn login-btn">Login</button>
         <button class="btn signup-btn">Sign Up</button>
       </li>
     </ul>
   </nav>
-
-<!--  <main>
-    <h1>Welcome to My Website</h1>
-    <p>This is an example of a modern responsive navigation bar.</p>
-     Add some content to make the page scrollable 
-    <div style="height: 2000px;"></div>
-  </main>
--->
-
-
-
-
-
 
   <!-- Main Content -->
   <main>
@@ -150,58 +151,41 @@
       </form>
     </section>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn">↑</button>
+  </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="back-to-top-btn">
-    ↑
-  </button>
-
-
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contact Us</h4>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 7890</p>
-        </div>
-        <div class="footer-section">
-          <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="#"><img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="Facebook"></a>
-            <a href="#"><img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram"></a>
-            <a href="#"><img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter"></a>
-          </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="Facebook"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter"></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2023 MyLogo. All rights reserved.</p>
-      </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 MyLogo. All rights reserved.</p>
+    </div>
+  </footer>
 
   <!-- JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
